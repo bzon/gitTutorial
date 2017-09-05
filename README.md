@@ -15,6 +15,9 @@ The full Git SCM documentation can be found [here](https://git-scm.com/docs).
 	* [Untracking or Unstaging a file](#untracking-or-unstaging-a-file)
 	* [Interactive Challenge](#interactive-challenge)
 - [Git Branches](#git-branches)
+	* [Create a feature branch](#create-a-feature-branch)
+	* [Add a change in a feature branch](#add-a-change-in-a-feature-branch)
+	* [Git Merge](#git-merge)
 - [Gitlab](#gitlab)
 	* [Gitlab User Guide](#gitlab-user-guide)
 
@@ -263,7 +266,7 @@ __Command Output__:
 * master
 ```
 
-## Create a branch
+## Create a feature branch
 
 __Command line__: Using `git checkout` to create a branch from the `master` branch  
 ```bash
@@ -283,6 +286,49 @@ __Command line__: Using `git checkout` to go to a different branch
 git checkout master # goes to master branch
 git checkout feature-branch # goes to feature-branch
 git checkout - # goes to the previous branch
+```
+
+## Add a change in a feature branch
+
+__Command line__: Ensure you are in the `feature-branch`  
+```bash
+git checkout feature-branch
+```
+
+__Command line__: Create a file called `my_new_feature.txt`  
+```bash
+touch my_new_feature.txt
+```
+
+__Command line__: Using `git add` to track a file  
+```bash
+git add my_new_feature.txt
+```
+
+__Command line__: Using `git status` to identify repository status
+```bash
+git status
+```
+
+__Command line__: Using `git commit` to commit a file using vim. Reference: [vim guide](./VIM.md)  
+```bash
+git commit
+```
+
+## Git Merge
+
+Merging a source branch to a target branch.  
+
+__Command line__: Using `git merge` to merge `feature-branch` branch into the `master` branch
+
+```bash
+git checkout master
+git merge feature-branch
+```
+
+Use `git log` and you should see that the commit from `feature-branch` is now integrated to the master branch.  
+```bash
+git log
 ```
 
 # Gitlab

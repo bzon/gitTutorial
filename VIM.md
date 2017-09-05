@@ -10,7 +10,8 @@ vim hello_world.sh
 # Commands Table of Contents
 - [Inserting and Deleting text](#inserting-and-deleting-text)
 - [Saving Changes & Quit](#saving-changes-and-exit)
-- [Challenge](#challenge)
+- [Challenge 1](#challenge-1)
+- [Challenge 2](#challenge-2)
 ---
 
 ## Inserting and Deleting text
@@ -30,7 +31,7 @@ Press `ESC` + `:` + `wq`, hit `Enter` to save and then exit
 
 ![gif](./img/vim_save_and_quit.gif)
 
-## Challenge!
+## Challenge 1
 
 Create a .vimrc file in your HOME directory and the following content.  
 
@@ -52,3 +53,30 @@ let &t_Co=256
 __HINTS:__ 
 - use `vim $HOME/.vimrc` to create and open the file. 
 - `Shift` + `Insert`, to paste a copied text.  
+
+## Challenge 2
+
+Update your `$HOME/.gitconfig file using vim by adding the following configurations.  
+
+```bash
+[user]
+    name = John Bryan Sazon
+    email = john.bryan.j.sazon@accenture.com
+[alias]
+    gl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    dt = !sh -c 'git diff-tree --no-commit-id --name-only -r $1' -
+    s = status
+    b = branch
+    c = checkout
+    autocrlf = false
+    editor = vim
+[core]
+    longpaths = true
+[credential]
+    helper = store
+```
+
+__HINTS:__ 
+- use `vim $HOME/.gitconfig` to create and open the file. 
+- `Shift` + `Insert`, to paste a copied text.  
+- `ESC` + `dd`, to delete the a line.  
