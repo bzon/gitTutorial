@@ -6,6 +6,8 @@ The full Git SCM documentation can be found [here](https://git-scm.com/docs).
 
 ## Table of Contents
 - [Installation](#installation)
+	* [Windows](#windows)
+	* [Mac OSX](#mac-osx)
 - [Setting up Local Git Configuration](#setting-up-local-git-configuration)
 - [Creating a Local Git Repository](#creating-a-local-git-repository)
 - [Basic Git usage and commands](#basic-git-usage-and-commands)
@@ -23,13 +25,22 @@ The full Git SCM documentation can be found [here](https://git-scm.com/docs).
 
 # Installation
 
-For **Windows users**, install Git & Git Bash  
+## Windows
+
+Install Git & Git Bash  
+
 https://git-scm.com/download/win
 
 Online installation and Git Basic guide for Windows user  
 https://www.youtube.com/watch?v=Y9XZQO1n_7c
 
-For **Mac OSX users**    
+Ensure that the following configurations are followed:  
+
+![img](./img/git_win_setup_1.png)
+![img](./img/git_win_setup_2.png)
+![img](./img/git_win_setup_3.png)
+
+## Mac OSX   
 ```bash
 brew install git
 ```
