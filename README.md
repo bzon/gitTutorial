@@ -67,7 +67,7 @@ __Command line__: View Git configurations from the .gitconfig file
 ```bash
 cat ~/.gitconfig
 ```
-Command Standard Output:  
+__Command Output__:  
 ```bash
 $ cat ~/.gitconfig 
 [credential]
@@ -357,7 +357,7 @@ It's a heavy weight Git server and there are too many features that aren't neces
 __Opensource Alternatives?__
 
 [Gerrit](https://www.gerritcodereview.com) - 
-The best Git code review tool ever made. Extending it with more features requires you to compile the plugins and install it by following some documentations. The user is not so intuitive and it takes a while to get a hang of it.  
+The best Git code review tool ever made IMO and the branching model of making use of a virtual branch is awesome. However, extending it with more features requires you to compile the plugins and install it by following some documentations. The user interface is not so intuitive and it takes a while to get a hang of it.  
 
 Another famous opensource Git server is [Gogs](https://gogs.io). It is still in its pre-release 1 phase and it doesn't support Code Reviews yet. 
 
